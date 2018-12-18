@@ -1,0 +1,24 @@
+•	What happens when you initialize a repository? Why do you need to do it?
+Quando um repositório é inicializado, você cria um arquivo .git. Esse arquivo se trata de um repositório com 0 commits iniciais. Você precisa fazer isso para poder receber ajuda de outras pessoas e poder utilizar as funções do Git, como manter os files agrupados ou separados.
+
+•	How is the staging area different from the working directory and the repository? What value do you think it offers?
+É nela que você determina as mudanças do próximo commit. Ela é intermediária. O usuário modifica os files no working directory, depois seleciona as mudanças que irão para o novo commit, mandando-as para a staging area. Com o novo commit, os files se tornam permanentes no repositório, para que possam ser acessados no futuro.
+	
+•	How can you use the staging area to make sure you have one commit per logical change?
+
+Se o usuário fez mais que uma mudança lógica desde o commit, ele pode adicionar todas as mudanças afetadas pela primeira mudança lógica para a staging area e depois commit elas sem commit as outras.
+
+•	What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Quando o usuário quer testar mudanças, mantendo o file original. Branches proporcionam a possibilidade de ter um código estável, em que o código está funcionando de acordo com os objetivos e outros vários códigos experimentais, em que mudanças podem ser realizadas visando melhorar de alguma forma o código estável.
+
+•	How do the diagrams help you visualize the branch structure?
+Eles mostram a sequência de commits; o que é acessível e o que não é.
+
+•	What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+O resultado é um commit combinado com todas as mudanças dos dois branches. A fusão é representada no diagrama como tendo dois parents – os dois branches que foram combinados. Isso preserva a acessibilidade para todos os commits das duas branches.
+
+•	What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+A fusão manual requer muito tempo e é muito trabalhosa, ainda mais quando várias pessoas estão trabalhando juntas. No entanto, a fusão automática não é perfeita e pode proporcionar erros ao código. Por isso, é importante testá-lo sempre após uma fusão automática.
+
+
+
