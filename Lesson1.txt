@@ -1,0 +1,20 @@
+•	 How did viewing a diff between two versions of a file help you see the bug that was introduced?
+Comparar e perceber onde o erro foi introduzido foi facilitado pelo comando, que encontrou as divergências entre os dois arquivos.
+	
+•	 How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Dessa forma, é possível comparar diferentes versões em prol de avaliar qual cumpre melhor o objetivo e recuperar arquivos (assim, não há o risco de perdê-los, mesmo que alterações sejam feitas). 
+
+•	  What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+Os pontos positivos são: o marco que cada save possui, além de apresentar o dia/hora e o autor da mudança e, caso o autor deseje, comentários sobre as mudanças; a maior simplicidade na busca de versões antigas (usando git log). No entanto, por ser manual, é possível que o usuário esqueça de salvar ou que a máquina utilizada apresente algum erro, então consequentemente as alterações realizadas no código serão perdidas. 
+
+•	 Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Os arquivos salvos no mesmo repositório são interpretados como relacionados entre si. Dessa forma, ao submeter um file a uma mudança que afeta os outros, há possibilidade de que a modificação seja feita pelo mesmo commit, ao inves de ter que ser feita individualmente.
+
+•	 How can you use the commands git log and git diff to view the history of files?
+O comando git log busca os commits de um file. Para utilizá-lo, o usuário deve ir na pasta do file e digitar git log, que fará aparecer cada commit realizada com suas informações (autor, data, ID, comentários). Outra forma é digitar git log --stat, que fornece as estatísticas das mudanças. Já o git diff compara as versões de um file, ou seja, arquivos diferentes. Para isso, o usuário deve ir na pasta do file e digitar git diff ID_1 ID_2 (é necessario escrever no minimo os 4 primeiros digitos da ID), que fará mudanças nas linhas de forma a significar: linhas em preto não sofreram modificação, linhas em vermelho foram deletadas e linhas em verde foram add.
+
+•	How might using version control make you more confident to make changes that could break something?
+Pois, dessa forma, as versões anteriores a qualquer mudança pode ser acessada. Então mesmo que o usuário faça alguma mudança que impeça o código de funcionar como deveria, ele pode voltar a um file em que o código funciona.
+
+•	Now that you have your workspace set up, what do you want to try using Git for?
+Para trabalhos da faculdade e meus projetos pessoais.
