@@ -1,0 +1,19 @@
+•	When would you want to use a remote repository rather than keeping all your work local?
+Quando eu quero torna-lo público e ou trabalhar com outras pessoas.
+
+•	Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Porque fazer isso de forma manual impede que o código mude inesperadamente sem que eu saiba.  
+
+•	Describe the differences between forks, clones, and branches.  When would you use one instead of another?
+Forks, clones e branches são formas de adicionar mudanças sem afetar a versão existente. Com branches as novas mudanças são adicionadas no mesmo repositório. Clones e forks copiam um repositório em um novo local. No entanto, Forks só podem ser realizados de GitHub para GitHub. Já os clones podem ser realizados para qualquer local que você tenha acesso.
+
+•	What is the benefit of having a copy of the last known state of the remote
+stored locally?
+Você pode ver o state of the remote mesmo quando offline.  Também possibilita que você faça comparações com o que está no remote e só faça uma fusão quando a versão estiver pronta.
+
+•	How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Eu colaboraria através do Google Docs ou email. No entanto, isso requer conexão com a internte, tem a possibilidade de conflitos entre as modificações, etc. Dessa forma, o Git ou GitHub facilita muito.
+
+•	When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
+Trabalhar em um branch separado garante que meu master branch esteja sempre funcionando. Além disso, eu posso fazer várias mudanças experimentais até que eu tenha certeza que elas funcionem. Também é bom para trabalhos em grupo, pois possibilita que as mudanças já feitas sejam revisadas. 
+Trabalhar diretamente no master é mais rápido e mais fácil, pois não requer nenhum checkout ou fusão.
